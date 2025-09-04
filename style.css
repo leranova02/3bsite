@@ -40,11 +40,9 @@ main {
     padding: 1em;
 }
 
-.tab-content {
-    margin-bottom: 1em;
-    padding: 1em;
-    background-color: #fff;
-    border: 1px solid #ddd;
+.schedule {
+    overflow-x: auto;
+    margin-bottom: 20px;
 }
 
 table {
@@ -68,4 +66,5 @@ img {
     height: auto;
     display: block; /* Убирает лишний отступ под картинкой */
     margin: 0 auto; /* Центрирует изображение */
+
 }
