@@ -46,25 +46,29 @@ main {
 }
 
 .table-container {
-    width: 90%;       /* Занимает 90% ширины экрана (можно настроить) */
-    max-width: 600px;  /* Ограничение максимальной ширины (по желанию) */
+    width: 95%;  /* Занимает 95% ширины экрана, оставляя небольшие поля */
+    max-width: 600px; /* Ограничение максимальной ширины (по желанию) */
     margin: 20px auto; /* Центрирование по горизонтали + отступ сверху/снизу */
-    overflow-x: auto;   /* Добавить горизонтальную полосу прокрутки, если таблица не помещается */
-    border: 1px solid #ccc; /* Рамка для таблицы */
-    border-radius: 5px;      /* Скругление углов таблицы */
-    padding: 10px;        /* Отступы внутри контейнера таблицы */
+    overflow-x: auto;   /* Горизонтальная полоса прокрутки при необходимости */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box; /*  Учитывать padding и border при расчете ширины */
 }
 
 table {
-    width: 100%;       /* Таблица занимает всю ширину контейнера */
-    border-collapse: collapse; /* Убрать двойные границы */
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /*  Важно: фиксированная ширина таблицы */
 }
 
 th, td {
     padding: 0.5em;
     border: 1px solid #ddd;
     text-align: left;
-    white-space: nowrap; /* Запретить перенос текста в ячейках */
+    word-break: break-word; /*  Разрешить перенос длинных слов */
+    /*  ИЛИ */
+    /* overflow-wrap: break-word; (более современный вариант) */
 }
 
 th {
@@ -78,5 +82,6 @@ img {
     margin: 0 auto; /* Центрирует изображение */
 
 }
+
 
 
