@@ -45,16 +45,26 @@ main {
     margin-bottom: 20px;
 }
 
+.table-container {
+    width: 90%;       /* Занимает 90% ширины экрана (можно настроить) */
+    max-width: 600px;  /* Ограничение максимальной ширины (по желанию) */
+    margin: 20px auto; /* Центрирование по горизонтали + отступ сверху/снизу */
+    overflow-x: auto;   /* Добавить горизонтальную полосу прокрутки, если таблица не помещается */
+    border: 1px solid #ccc; /* Рамка для таблицы */
+    border-radius: 5px;      /* Скругление углов таблицы */
+    padding: 10px;        /* Отступы внутри контейнера таблицы */
+}
+
 table {
-    width: 100%;
-    border-collapse: collapse;
+    width: 100%;       /* Таблица занимает всю ширину контейнера */
+    border-collapse: collapse; /* Убрать двойные границы */
 }
 
 th, td {
+    padding: 0.5em;
     border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
-    vertical-align: top; /* Added for alignment */
+    text-align: left;
+    white-space: nowrap; /* Запретить перенос текста в ячейках */
 }
 
 th {
@@ -68,4 +78,5 @@ img {
     margin: 0 auto; /* Центрирует изображение */
 
 }
+
 
