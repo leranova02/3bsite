@@ -62,9 +62,10 @@ th {
 }
 
 img {
-    max-width: 50%;
+    max-width: 80%;
     height: auto;
     display: block; /* Убирает лишний отступ под картинкой */
     margin: 0 auto; /* Центрирует изображение */
 
 }
+
