@@ -1,0 +1,71 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #89aee6;
+    color: #fff;
+    padding: 1.5em 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #eee;
+    padding: 0.5em 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+main {
+    padding: 1em;
+}
+
+.tab-content {
+    margin-bottom: 1em;
+    padding: 1em;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    vertical-align: top; /* Added for alignment */
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+    display: block; /* Убирает лишний отступ под картинкой */
+    margin: 0 auto; /* Центрирует изображение */
+}
